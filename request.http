@@ -1,0 +1,28 @@
+POST http://localhost:4002/products
+content-type: application/json
+
+{
+    "name": "Caderno 96 folhas",
+    "price": 2.33
+}
+
+###
+
+GET http://localhost:4002/products
+
+###
+
+GET http://localhost:4002/products/5aba7f3d-b5de-4201-89e0-77f7301ca642
+
+###
+
+PUT http://localhost:4002/products/5f64f626-5662-4db7-897a-0ccd84028566
+content-type: application/json
+
+{
+    "name": "Xicara azul",
+    "price": 22.23
+}
+
+###
+DELETE http://localhost:4002/products/c37ab058-fa18-4472-bb91-7fd13f3cd413
